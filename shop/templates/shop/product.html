@@ -1,0 +1,23 @@
+{% extends 'shop/base.html' %}
+{% load static %}
+{% block title %} product {% endblock %}
+
+{% block content %}
+<h1>Product</h1>
+<div class="container py-5">
+    <div class="row mt-5">
+        <div class="col-10 mx-auto col-md-6 my-3">
+            <img class="card-img-top" src="{% static 'images/zara.jpg' %}" alt="">
+        </div>
+    </div>
+</div>
+<div class="col-10 mx-auto col-md-6 my-3">
+    <div>
+        <h1 class="product_title">Zara</h1>
+        <p>$9.99</p>
+        <p class="product_desc">Product description</p>
+        <p class="text-justify product_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, cupiditate, nisi eligendi placeat dolorum sequi nesciunt corrupti neque quam suscipit consectetur minima aperiam. Facere quas veniam ut molestiae iusto impedit fugiat illum ab ipsa animi! Qui laboriosam quas, provident excepturi, cupiditate dolorum nihil rem sequi quaerat reprehenderit ullam, tempore dicta possimus nobis vero assumenda quod commodi error amet eius! Harum quo veniam rerum voluptatibus unde molestias, dolorem enim! Quidem fugiat, repellat nam sapiente incidunt explicabo ducimus suscipit possimus odit, omnis, nihil dolorum dignissimos debitis iusto quod nobis necessitatibus corrupti reiciendis. Optio at ab, nam aliquid sint maiores, impedit, ipsam velit suscipit consequatur nisi magnam similique in cumque iure? Sapiente inventore magni harum quae laboriosam at magnam vitae possimus quidem cupiditate? Aperiam unde provident at laboriosam ducimus obcaecati exercitationem rerum. Sequi rem atque quis magnam inventore vel ad odio necessitatibus ea?</p>
+        <p class="text-justify product_text">Out of stock</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'shop/base.html' %}
+
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <img class="img-fluid card-img-top" src="{% static 'images/1543532958635.png' %}" alt="">
+    </div>
+</div>
+
+
+    <div class="py-5 text-center">
+        <h1 class="text-capitaliza font-weught-bold">
+            Our Products
+        </h1>
+    </div> 
+
+    <div class="container">
+        <div class="row">
+            {% for i in 'aaa' %}
+            <div class="col-9 mx-auto col-mb-4 col-lg-3">
+                <div class="card mb-4">
+                    <div class="p-4">
+                        <img class="card-img-top" src="{% static 'images/H&M.jpeg' %}" alt="">
+                    </div>
+                    <div class="card-footer d-flex justify-content-between" style="background: transparent; border-color: transparent;">
+                        <p class="font-weight-bold mb-o">
+                            H&M
+                        </p>
+                        <h5 class="text-info font-italic mb-0">
+                            9.99$
+                        </h5>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+{% endblock %}

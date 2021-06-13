@@ -1,10 +1,10 @@
 from django.shortcuts import render
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'shop/home.html')
 
-def about(request):
-    return render(request, 'about.html')
+def product(request):
+    return render(request, 'shop/product.html')
 
 
 # Create your views here.

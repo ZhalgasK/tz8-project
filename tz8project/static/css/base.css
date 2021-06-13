@@ -1,0 +1,12 @@
+body{
+    background: #f5e9e9;
+}
+
+.product_title{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+

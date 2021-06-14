@@ -9,9 +9,13 @@ def home(request, category_slug=None):
         stores = Store.objects.filter(category = category_page, available = True)
     else:
         stores = Store.objects.all().filter(available = True)
-    return render(request, 'shop/home.html', {'category': category_page, 'store': stores})
+    return render(request, 'shop/home.html', {'category': category_page, 'stores': stores})
 
 def store(request):
     return render(request, 'shop/store.html')
+
+
+
+
 
 # Create your views here.

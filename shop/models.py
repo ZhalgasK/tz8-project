@@ -6,6 +6,11 @@ class Category(models.Model):
     description = models.TextField(blank=True)
     image = models.ImageField(upload_to = 'category', blank = True)
 
+    class Meta:
+        ordering = ('name',)
+        verbose_name = 'category'
+        verbose_name_plural = 'categories'
+
 
     def __str__(self):
         return self.name
@@ -22,6 +27,11 @@ class Store(models.Model):
     available = models.BooleanField(default = True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ('name',)
+        verbose_name = 'store'
+        verbose_name_plural = 'stores'
 
     def __str__(self):
         return self.name

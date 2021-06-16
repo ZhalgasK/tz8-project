@@ -14,7 +14,7 @@
 
     <div class="py-5 text-center">
         <h1 class="text-capitaliza font-weught-bold">
-            Our Stores Test
+            Наши магазины
         </h1>
     </div> 
 
@@ -24,14 +24,15 @@
             <div class="col-9 mx-auto col-mb-4 col-lg-3">
                 <div class="card mb-4">
                     <div class="p-4">
-                        <img class="card-img-top" src="{{store.image.url}}" alt="{{store.name}}">
+                        <a href="{{ store.get_url }}"><img class="card-img-top" src="{{store.image.url}}" alt="{{store.name}}"></a>
+                        
                     </div>
                     <div class="card-footer d-flex justify-content-between" style="background: transparent; border-color: transparent;">
                         <p class="font-weight-bold mb-o">
                             {{store.name}}
                         </p>
                         <h5 class="text-info font-italic mb-0">
-                            {{store.price}}
+                            {{store.price}} $
                         </h5>
                     </div>
                     

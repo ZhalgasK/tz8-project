@@ -1,0 +1,99 @@
+{% extends 'shop/base.html' %}
+
+{% load static %}
+
+{% block title %} Cart {% endblock %}
+
+{% block content %}
+
+    <div class="text-center">
+        <br>
+        <div class="text-center product_title">
+            Shopping cart
+        </div>
+    </div>
+    <div class="row mx-auto">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6
+        text-center">
+            <table class="table cart-table">
+                <thead class="cart-thead">
+                    <tr>
+                        <th colspan="4">
+                            Your Items
+                        </th>
+                    </tr>
+                </thead>
+                {% for i in '123' %}
+                <tr>
+                    <td>
+                        <a href="">
+                            <img src="{% static 'images/b1.jpg' %}
+                            " width="100" height="100" alt="">
+                        </a>
+                    </td>
+                    <td class="text-left">
+                        Jeans
+                        <br>
+                        SKU: 7
+                        <br>
+                        Unit Price: $20
+                        <br>
+                        Quantity: 3x$20
+                    </td>
+                    <td>
+                        $60
+                    </td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                add_shopping_cart
+                            </i>
+                            <i class="material-icons">
+                                remove_circle_outline
+                            </i>
+                            <i class="material-icons">
+                                delete
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+                {% endfor%}
+            </table>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6
+        text-center">
+            <table class="table cart-table">
+                <thead class="cart-thead">
+                    <tr>
+                        <th colspan="4">
+                        Check Out
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Please check your card before payment.
+                        </td>
+                    </tr>
+                    <tr class="text-left">
+                        <td>
+                            Your total bill is: <strong>$60</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="mx-auto">
+                <a href="" style="text-decoration: none;">
+                    <button type="button" class="btn btn-lg btn-blog bg-dark text-white">
+                        Back To Products
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

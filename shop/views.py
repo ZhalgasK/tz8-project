@@ -11,8 +11,15 @@ def home(request, category_slug=None):
         stores = Store.objects.all().filter(available = True)
     return render(request, 'shop/home.html', {'category': category_page, 'stores': stores})
 
-def store(request):
-    return render(request, 'shop/store.html')
+def store(request, category_slug, store_slug):
+    try:
+        store = Store.objects.get(category__slug = category_slug, slug = store_slug)
+    except Exception as e:
+        raise e
+    return render(request, 'shop/store.html', {'store': store})
+
+def cart(request):
+    return render(request,'shop/cart.html')
 
 
 
